@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Photo Gallery</h1>
+    <div class="gallery-container">
+        <div class="gallery" id="gallery">
+           
+        </div>
+        <div class="button-container">
+            <button onclick="loadMoreImages()">Завантажити ще 4 картинки</button>
+            <button onclick="clearGallery()">Очистити галерею</button>
+            <button onclick="removeLastImage()">Видалити останню картинку</button>
+            <button onclick="reverseGallery()">Перевернути галерею</button>
+        </div>
+    </div>
+
+  
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="imgModal">
+        <div class="caption" id="caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
